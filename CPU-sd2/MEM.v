@@ -1,7 +1,6 @@
-module MEM(tx, in1, in2, entrada, contador, current_state, clock);
+module MEM(tx, n1, n2, entrada, contador, current_state, clock);
 	input wire clock;
-	input wire [3:0] in1, in2, tx;
-	output reg [3:0] entrada, current_state;
+	output reg [3:0] entrada, current_state, n1, n2;
 	output reg contador;
 	
 	parameter CLEAR = 4'd0;
@@ -10,6 +9,8 @@ module MEM(tx, in1, in2, entrada, contador, current_state, clock);
 	
 	initial
 	begin
+		n1 <= 4'd5;
+		n2 <= 4'd3;
 		entrada <= 4'd0;
 		contador <= 1'b0;
 		current_state <= 4'd0;
@@ -21,18 +22,18 @@ module MEM(tx, in1, in2, entrada, contador, current_state, clock);
 		begin
 			case(contador)
 				1'b0: begin
-					entrada <= in1;
+					entrada <= n1;
 					contador <= 1'b1;
 				end
 				1'b1: begin
-					entrada <= in2;
+					entrada <= n2;
 					contador <= 1'b0;
 				end
 				default;
 			endcase
 		end
 		
-		case(current_state)
+		case(current_state) //Estados da maquina
 			4'd0: current_state <= 4'd1;
 			4'd1: current_state <= 4'd2;
 			4'd2: current_state <= 4'd3;
