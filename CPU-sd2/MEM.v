@@ -1,7 +1,11 @@
-module MEM(tx, n1, n2, entrada, contador, current_state, clock);
+module MEM(tx, entrada, contador, current_state, clock);
 	input wire clock;
-	output reg [3:0] entrada, current_state, n1, n2;
+	input wire [3:0] tx;
+	output reg [3:0] entrada, current_state;
 	output reg contador;
+	
+	reg [3:0] n1;
+	reg [3:0] n2;
 	
 	parameter CLEAR = 4'd0;
 	parameter LOAD = 4'd1;
@@ -11,7 +15,6 @@ module MEM(tx, n1, n2, entrada, contador, current_state, clock);
 	begin
 		n1 <= 4'd5;
 		n2 <= 4'd3;
-		entrada <= 4'd0;
 		contador <= 1'b0;
 		current_state <= 4'd0;
 	end

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CPU-sd2
-Mon Dec 09 19:28:12 2019
+Mon Dec 09 20:44:35 2019
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -14,16 +14,18 @@ Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: MEM:memoria
- 12. Parameter Settings for User Entity Instance: Control:controle
- 13. Parameter Settings for User Entity Instance: ULA:ula
- 14. Parameter Settings for User Entity Instance: RegX:registradorX
- 15. Parameter Settings for User Entity Instance: RegY:registradorY
- 16. Parameter Settings for User Entity Instance: RegZ:registradorZ
- 17. Port Connectivity Checks: "MEM:memoria"
- 18. Analysis & Synthesis Messages
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: MEM:memoria
+ 14. Parameter Settings for User Entity Instance: Control:controle
+ 15. Parameter Settings for User Entity Instance: ULA:ula
+ 16. Parameter Settings for User Entity Instance: RegX:registradorX
+ 17. Parameter Settings for User Entity Instance: RegY:registradorY
+ 18. Parameter Settings for User Entity Instance: RegZ:registradorZ
+ 19. Port Connectivity Checks: "MEM:memoria"
+ 20. Analysis & Synthesis Messages
 
 
 
@@ -49,16 +51,16 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Mon Dec 09 19:28:12 2019        ;
+; Analysis & Synthesis Status   ; Successful - Mon Dec 09 20:44:35 2019        ;
 ; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                 ; CPU-sd2                                      ;
 ; Top-level Entity Name         ; CPU                                          ;
 ; Family                        ; Stratix II                                   ;
 ; Logic utilization             ; N/A                                          ;
-;     Combinational ALUTs       ; 30                                           ;
-;     Dedicated logic registers ; 24                                           ;
-; Total registers               ; 24                                           ;
-; Total pins                    ; 49                                           ;
+;     Combinational ALUTs       ; 25                                           ;
+;     Dedicated logic registers ; 19                                           ;
+; Total registers               ; 19                                           ;
+; Total pins                    ; 41                                           ;
 ; Total virtual pins            ; 0                                            ;
 ; Total block memory bits       ; 0                                            ;
 ; DSP block 9-bit elements      ; 0                                            ;
@@ -178,38 +180,38 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-----------------------------------------------+-------+
 ; Resource                                      ; Usage ;
 +-----------------------------------------------+-------+
-; Estimated ALUTs Used                          ; 30    ;
-; Dedicated logic registers                     ; 24    ;
+; Estimated ALUTs Used                          ; 25    ;
+; Dedicated logic registers                     ; 19    ;
 ;                                               ;       ;
 ; Estimated ALUTs Unavailable                   ; 0     ;
 ;                                               ;       ;
-; Total combinational functions                 ; 30    ;
+; Total combinational functions                 ; 25    ;
 ; Combinational ALUT usage by number of inputs  ;       ;
 ;     -- 7 input functions                      ; 0     ;
 ;     -- 6 input functions                      ; 0     ;
 ;     -- 5 input functions                      ; 0     ;
-;     -- 4 input functions                      ; 5     ;
-;     -- <=3 input functions                    ; 25    ;
+;     -- 4 input functions                      ; 6     ;
+;     -- <=3 input functions                    ; 19    ;
 ;                                               ;       ;
 ; Combinational ALUTs by mode                   ;       ;
-;     -- normal mode                            ; 26    ;
+;     -- normal mode                            ; 21    ;
 ;     -- extended LUT mode                      ; 0     ;
 ;     -- arithmetic mode                        ; 4     ;
 ;     -- shared arithmetic mode                 ; 0     ;
 ;                                               ;       ;
-; Estimated ALUT/register pairs used            ; 30    ;
+; Estimated ALUT/register pairs used            ; 25    ;
 ;                                               ;       ;
-; Total registers                               ; 24    ;
-;     -- Dedicated logic registers              ; 24    ;
+; Total registers                               ; 19    ;
+;     -- Dedicated logic registers              ; 19    ;
 ;     -- I/O registers                          ; 0     ;
 ;                                               ;       ;
-; Estimated ALMs:  partially or completely used ; 15    ;
+; Estimated ALMs:  partially or completely used ; 13    ;
 ;                                               ;       ;
-; I/O pins                                      ; 49    ;
+; I/O pins                                      ; 41    ;
 ; Maximum fan-out node                          ; clock ;
-; Maximum fan-out                               ; 24    ;
-; Total fan-out                                 ; 166   ;
-; Average fan-out                               ; 1.61  ;
+; Maximum fan-out                               ; 19    ;
+; Total fan-out                                 ; 133   ;
+; Average fan-out                               ; 1.56  ;
 +-----------------------------------------------+-------+
 
 
@@ -218,10 +220,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name    ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+------------------------+--------------+
-; |CPU                       ; 30 (0)            ; 24 (0)       ; 0                 ; 0            ; 0       ; 0         ; 0         ; 49   ; 0            ; |CPU                   ; work         ;
-;    |Control:controle|      ; 5 (5)             ; 4 (4)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|Control:controle  ;              ;
-;    |MEM:memoria|           ; 8 (8)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|MEM:memoria       ;              ;
-;    |RegX:registradorX|     ; 4 (4)             ; 4 (4)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|RegX:registradorX ; work         ;
+; |CPU                       ; 25 (0)            ; 19 (0)       ; 0                 ; 0            ; 0       ; 0         ; 0         ; 41   ; 0            ; |CPU                   ; work         ;
+;    |Control:controle|      ; 5 (5)             ; 4 (4)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|Control:controle  ; work         ;
+;    |MEM:memoria|           ; 4 (4)             ; 4 (4)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|MEM:memoria       ;              ;
+;    |RegX:registradorX|     ; 3 (3)             ; 3 (3)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|RegX:registradorX ;              ;
 ;    |RegY:registradorY|     ; 5 (5)             ; 4 (4)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|RegY:registradorY ; work         ;
 ;    |RegZ:registradorZ|     ; 4 (4)             ; 4 (4)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|RegZ:registradorZ ; work         ;
 ;    |ULA:ula|               ; 4 (4)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|ULA:ula           ; work         ;
@@ -239,8 +241,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Control:controle|tx[1..3]              ; Stuck at GND due to stuck port data_in ;
 ; Control:controle|tula[0..3]            ; Stuck at GND due to stuck port data_in ;
 ; MEM:memoria|current_state[3]           ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 13 ;                                        ;
+; MEM:memoria|entrada[0]                 ; Stuck at VCC due to stuck port data_in ;
+; MEM:memoria|entrada[3]                 ; Stuck at GND due to stuck port data_in ;
+; MEM:memoria|entrada[1..2]              ; Merged with MEM:memoria|contador       ;
+; RegX:registradorX|barramento[3]        ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 18 ;                                        ;
 +----------------------------------------+----------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                          ;
++------------------------+---------------------------+---------------------------------------------------------------------------------+
+; Register name          ; Reason for Removal        ; Registers Removed due to This Register                                          ;
++------------------------+---------------------------+---------------------------------------------------------------------------------+
+; Control:controle|tx[1] ; Stuck at GND              ; MEM:memoria|entrada[0], MEM:memoria|entrada[3], RegX:registradorX|barramento[3] ;
+;                        ; due to stuck port data_in ;                                                                                 ;
++------------------------+---------------------------+---------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -248,14 +264,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 24    ;
+; Total registers                              ; 19    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 11    ;
+; Number of registers using Clock Enable       ; 5     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; Control:controle|tx[0]                 ; 6       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -264,7 +290,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
 ; 4:1                ; 3 bits    ; 6 ALUTs       ; 6 ALUTs              ; 0 ALUTs                ; Yes        ; |CPU|RegY:registradorY|acumulador[0] ;
-; 8:1                ; 3 bits    ; 15 ALUTs      ; 9 ALUTs              ; 6 ALUTs                ; Yes        ; |CPU|Control:controle|tx[0]          ;
+; 8:1                ; 2 bits    ; 10 ALUTs      ; 4 ALUTs              ; 6 ALUTs                ; Yes        ; |CPU|Control:controle|ty[0]          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
 
 
@@ -355,7 +381,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Mon Dec 09 19:28:11 2019
+    Info: Processing started: Mon Dec 09 20:44:34 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU-sd2 -c CPU-sd2
 Info: Found 1 design units, including 1 entities, in source file regx.v
     Info: Found entity 1: RegX
@@ -371,7 +397,7 @@ Info: Found 1 design units, including 1 entities, in source file regz.v
     Info: Found entity 1: RegZ
 Info: Found 1 design units, including 1 entities, in source file control.v
     Info: Found entity 1: Control
-Warning (10236): Verilog HDL Implicit Net warning at CPU.v(8): created implicit net for "contador"
+Warning (10236): Verilog HDL Implicit Net warning at CPU.v(7): created implicit net for "contador"
 Info: Elaborating entity "CPU" for the top level hierarchy
 Info: Elaborating entity "MEM" for hierarchy "MEM:memoria"
 Info: Elaborating entity "Control" for hierarchy "Control:controle"
@@ -405,15 +431,18 @@ Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "tula[1]" is stuck at GND
     Warning (13410): Pin "tula[2]" is stuck at GND
     Warning (13410): Pin "tula[3]" is stuck at GND
+    Warning (13410): Pin "barramento[3]" is stuck at GND
+    Warning (13410): Pin "entrada[0]" is stuck at VCC
+    Warning (13410): Pin "entrada[3]" is stuck at GND
     Warning (13410): Pin "current_state[3]" is stuck at GND
-Info: Implemented 79 device resources after synthesis - the final resource count might be different
-    Info: Implemented 9 input pins
+Info: Implemented 66 device resources after synthesis - the final resource count might be different
+    Info: Implemented 1 input pins
     Info: Implemented 40 output pins
-    Info: Implemented 30 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 24 warnings
+    Info: Implemented 25 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 27 warnings
     Info: Peak virtual memory: 225 megabytes
-    Info: Processing ended: Mon Dec 09 19:28:12 2019
+    Info: Processing ended: Mon Dec 09 20:44:35 2019
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 

@@ -8,6 +8,10 @@ module Control(current_state, tx, ty, tz, tula, clock);
 	parameter HOLD = 4'd2;
 	parameter SHIFTR = 4'd3;
 	
+	initial begin
+		tx <= LOAD; //forçando inicializacao para o primeiro "ciclo"
+	end
+	
 	always@(posedge clock)
 	begin
 		tula <= 4'd0; //a ULA vai apenas somar, nao e necessario trocar o estado dela
