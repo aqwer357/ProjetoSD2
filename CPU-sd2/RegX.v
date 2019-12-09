@@ -3,9 +3,9 @@ module RegX (entrada, barramentodados, tx, clock);
 	input wire [3:0] entrada, tx;
 	output reg [3:0] barramento;
 	
-	parameter CLEAR = 4'b0000;
-	parameter LOAD = 4'b0001;
-	parameter HOLD = 4'b0010;
+	parameter CLEAR = 4'd0;
+	parameter LOAD = 4'd1;
+	parameter HOLD = 4'd2;
 	
 	always@(posedge clock)
 		begin
