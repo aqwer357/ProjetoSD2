@@ -13,6 +13,7 @@ module RegZ(clock, tz, acumulador, out);
 			CLEAR: out <= 4'd0;
 			LOAD: out <= acumulador;
 			//HOLD: nada
+			default;
 		endcase
 	end
 	

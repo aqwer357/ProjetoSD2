@@ -15,6 +15,7 @@ module RegY(ulaout, acumulador, ty, clock);
 			LOAD: acumulador <= ulaout;
 			//HOLD: nada
 			SHIFTR: acumulador <= acumulador >> 1;
+			default;
 		endcase;
 	end
 	

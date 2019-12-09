@@ -1,0 +1,1133 @@
+Simulator report for CPU-sd2
+Mon Dec 09 17:59:03 2019
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 30.0 us      ;
+; Simulation Netlist Size     ; 650 nodes    ;
+; Simulation Coverage         ;      51.31 % ;
+; Total Number of Transitions ; 292594       ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; CPU.vwf    ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      51.31 % ;
+; Total nodes checked                                 ; 650          ;
+; Total output ports checked                          ; 649          ;
+; Total output ports with complete 1/0-value coverage ; 333          ;
+; Total output ports with no 1/0-value coverage       ; 316          ;
+; Total output ports with no 1-value coverage         ; 316          ;
+; Total output ports with no 0-value coverage         ; 316          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                              ;
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
+; Node Name                                                                         ; Output Port Name                                                                  ; Output Port Type ;
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
+; |CPU|tx[0]                                                                        ; |CPU|tx[0]                                                                        ; pin_out          ;
+; |CPU|ty[0]                                                                        ; |CPU|ty[0]                                                                        ; pin_out          ;
+; |CPU|ty[1]                                                                        ; |CPU|ty[1]                                                                        ; pin_out          ;
+; |CPU|tz[0]                                                                        ; |CPU|tz[0]                                                                        ; pin_out          ;
+; |CPU|acumulador[0]                                                                ; |CPU|acumulador[0]                                                                ; pin_out          ;
+; |CPU|acumulador[1]                                                                ; |CPU|acumulador[1]                                                                ; pin_out          ;
+; |CPU|acumulador[2]                                                                ; |CPU|acumulador[2]                                                                ; pin_out          ;
+; |CPU|acumulador[3]                                                                ; |CPU|acumulador[3]                                                                ; pin_out          ;
+; |CPU|barramento[0]                                                                ; |CPU|barramento[0]                                                                ; pin_out          ;
+; |CPU|barramento[1]                                                                ; |CPU|barramento[1]                                                                ; pin_out          ;
+; |CPU|barramento[2]                                                                ; |CPU|barramento[2]                                                                ; pin_out          ;
+; |CPU|barramento[3]                                                                ; |CPU|barramento[3]                                                                ; pin_out          ;
+; |CPU|ulaout[0]                                                                    ; |CPU|ulaout[0]                                                                    ; pin_out          ;
+; |CPU|ulaout[1]                                                                    ; |CPU|ulaout[1]                                                                    ; pin_out          ;
+; |CPU|ulaout[2]                                                                    ; |CPU|ulaout[2]                                                                    ; pin_out          ;
+; |CPU|ulaout[3]                                                                    ; |CPU|ulaout[3]                                                                    ; pin_out          ;
+; |CPU|entrada[0]                                                                   ; |CPU|entrada[0]                                                                   ; pin_out          ;
+; |CPU|entrada[1]                                                                   ; |CPU|entrada[1]                                                                   ; pin_out          ;
+; |CPU|entrada[2]                                                                   ; |CPU|entrada[2]                                                                   ; pin_out          ;
+; |CPU|entrada[3]                                                                   ; |CPU|entrada[3]                                                                   ; pin_out          ;
+; |CPU|out[0]                                                                       ; |CPU|out[0]                                                                       ; pin_out          ;
+; |CPU|out[1]                                                                       ; |CPU|out[1]                                                                       ; pin_out          ;
+; |CPU|out[2]                                                                       ; |CPU|out[2]                                                                       ; pin_out          ;
+; |CPU|current_state[0]                                                             ; |CPU|current_state[0]                                                             ; pin_out          ;
+; |CPU|current_state[1]                                                             ; |CPU|current_state[1]                                                             ; pin_out          ;
+; |CPU|current_state[2]                                                             ; |CPU|current_state[2]                                                             ; pin_out          ;
+; |CPU|in1[0]                                                                       ; |CPU|in1[0]                                                                       ; out              ;
+; |CPU|in1[1]                                                                       ; |CPU|in1[1]                                                                       ; out              ;
+; |CPU|in1[2]                                                                       ; |CPU|in1[2]                                                                       ; out              ;
+; |CPU|in1[3]                                                                       ; |CPU|in1[3]                                                                       ; out              ;
+; |CPU|in2[0]                                                                       ; |CPU|in2[0]                                                                       ; out              ;
+; |CPU|in2[1]                                                                       ; |CPU|in2[1]                                                                       ; out              ;
+; |CPU|in2[2]                                                                       ; |CPU|in2[2]                                                                       ; out              ;
+; |CPU|in2[3]                                                                       ; |CPU|in2[3]                                                                       ; out              ;
+; |CPU|clock                                                                        ; |CPU|clock                                                                        ; out              ;
+; |CPU|RegZ:registradorZ|out[0]                                                     ; |CPU|RegZ:registradorZ|out[0]                                                     ; regout           ;
+; |CPU|RegZ:registradorZ|out[1]                                                     ; |CPU|RegZ:registradorZ|out[1]                                                     ; regout           ;
+; |CPU|RegZ:registradorZ|out[2]                                                     ; |CPU|RegZ:registradorZ|out[2]                                                     ; regout           ;
+; |CPU|RegY:registradorY|acumulador[0]                                              ; |CPU|RegY:registradorY|acumulador[0]                                              ; regout           ;
+; |CPU|RegY:registradorY|acumulador[1]                                              ; |CPU|RegY:registradorY|acumulador[1]                                              ; regout           ;
+; |CPU|RegY:registradorY|acumulador[2]                                              ; |CPU|RegY:registradorY|acumulador[2]                                              ; regout           ;
+; |CPU|RegY:registradorY|acumulador[3]                                              ; |CPU|RegY:registradorY|acumulador[3]                                              ; regout           ;
+; |CPU|RegX:registradorX|barramento[0]                                              ; |CPU|RegX:registradorX|barramento[0]                                              ; regout           ;
+; |CPU|RegX:registradorX|barramento[1]                                              ; |CPU|RegX:registradorX|barramento[1]                                              ; regout           ;
+; |CPU|RegX:registradorX|barramento[2]                                              ; |CPU|RegX:registradorX|barramento[2]                                              ; regout           ;
+; |CPU|RegX:registradorX|barramento[3]                                              ; |CPU|RegX:registradorX|barramento[3]                                              ; regout           ;
+; |CPU|Control:controle|WideOr3                                                     ; |CPU|Control:controle|WideOr3                                                     ; out0             ;
+; |CPU|Control:controle|tz[0]                                                       ; |CPU|Control:controle|tz[0]                                                       ; regout           ;
+; |CPU|Control:controle|ty[0]                                                       ; |CPU|Control:controle|ty[0]                                                       ; regout           ;
+; |CPU|Control:controle|ty[1]                                                       ; |CPU|Control:controle|ty[1]                                                       ; regout           ;
+; |CPU|Control:controle|tx[0]                                                       ; |CPU|Control:controle|tx[0]                                                       ; regout           ;
+; |CPU|Control:controle|current_state[0]                                            ; |CPU|Control:controle|current_state[0]                                            ; regout           ;
+; |CPU|Control:controle|current_state[1]                                            ; |CPU|Control:controle|current_state[1]                                            ; regout           ;
+; |CPU|Control:controle|current_state[2]                                            ; |CPU|Control:controle|current_state[2]                                            ; regout           ;
+; |CPU|MEM:memoria|entrada~0                                                        ; |CPU|MEM:memoria|entrada~0                                                        ; out              ;
+; |CPU|MEM:memoria|entrada~1                                                        ; |CPU|MEM:memoria|entrada~1                                                        ; out              ;
+; |CPU|MEM:memoria|entrada~2                                                        ; |CPU|MEM:memoria|entrada~2                                                        ; out              ;
+; |CPU|MEM:memoria|entrada~3                                                        ; |CPU|MEM:memoria|entrada~3                                                        ; out              ;
+; |CPU|MEM:memoria|entrada[0]                                                       ; |CPU|MEM:memoria|entrada[0]                                                       ; regout           ;
+; |CPU|MEM:memoria|entrada[1]                                                       ; |CPU|MEM:memoria|entrada[1]                                                       ; regout           ;
+; |CPU|MEM:memoria|entrada[2]                                                       ; |CPU|MEM:memoria|entrada[2]                                                       ; regout           ;
+; |CPU|MEM:memoria|entrada[3]                                                       ; |CPU|MEM:memoria|entrada[3]                                                       ; regout           ;
+; |CPU|RegZ:registradorZ|Selector1~0                                                ; |CPU|RegZ:registradorZ|Selector1~0                                                ; out0             ;
+; |CPU|RegZ:registradorZ|Selector2~0                                                ; |CPU|RegZ:registradorZ|Selector2~0                                                ; out0             ;
+; |CPU|RegZ:registradorZ|Selector3~0                                                ; |CPU|RegZ:registradorZ|Selector3~0                                                ; out0             ;
+; |CPU|RegX:registradorX|Selector0~0                                                ; |CPU|RegX:registradorX|Selector0~0                                                ; out0             ;
+; |CPU|RegX:registradorX|Selector1~0                                                ; |CPU|RegX:registradorX|Selector1~0                                                ; out0             ;
+; |CPU|RegX:registradorX|Selector2~0                                                ; |CPU|RegX:registradorX|Selector2~0                                                ; out0             ;
+; |CPU|RegX:registradorX|Selector3~0                                                ; |CPU|RegX:registradorX|Selector3~0                                                ; out0             ;
+; |CPU|Control:controle|Selector0~0                                                 ; |CPU|Control:controle|Selector0~0                                                 ; out0             ;
+; |CPU|Control:controle|Selector1~0                                                 ; |CPU|Control:controle|Selector1~0                                                 ; out0             ;
+; |CPU|Control:controle|Decoder1~0                                                  ; |CPU|Control:controle|Decoder1~0                                                  ; out0             ;
+; |CPU|Control:controle|Decoder1~1                                                  ; |CPU|Control:controle|Decoder1~1                                                  ; out0             ;
+; |CPU|Control:controle|Decoder1~2                                                  ; |CPU|Control:controle|Decoder1~2                                                  ; out0             ;
+; |CPU|Control:controle|Decoder1~3                                                  ; |CPU|Control:controle|Decoder1~3                                                  ; out0             ;
+; |CPU|ULA:ula|Add0~0                                                               ; |CPU|ULA:ula|Add0~0                                                               ; out0             ;
+; |CPU|ULA:ula|Add0~1                                                               ; |CPU|ULA:ula|Add0~1                                                               ; out0             ;
+; |CPU|ULA:ula|Add0~2                                                               ; |CPU|ULA:ula|Add0~2                                                               ; out0             ;
+; |CPU|ULA:ula|Add0~3                                                               ; |CPU|ULA:ula|Add0~3                                                               ; out0             ;
+; |CPU|ULA:ula|Add0~4                                                               ; |CPU|ULA:ula|Add0~4                                                               ; out0             ;
+; |CPU|ULA:ula|Add0~5                                                               ; |CPU|ULA:ula|Add0~5                                                               ; out0             ;
+; |CPU|ULA:ula|Add0~6                                                               ; |CPU|ULA:ula|Add0~6                                                               ; out0             ;
+; |CPU|ULA:ula|Add0~7                                                               ; |CPU|ULA:ula|Add0~7                                                               ; out0             ;
+; |CPU|ULA:ula|Add0~8                                                               ; |CPU|ULA:ula|Add0~8                                                               ; out0             ;
+; |CPU|ULA:ula|Add0~9                                                               ; |CPU|ULA:ula|Add0~9                                                               ; out0             ;
+; |CPU|ULA:ula|Add0~10                                                              ; |CPU|ULA:ula|Add0~10                                                              ; out0             ;
+; |CPU|ULA:ula|Add0~11                                                              ; |CPU|ULA:ula|Add0~11                                                              ; out0             ;
+; |CPU|ULA:ula|Add0~12                                                              ; |CPU|ULA:ula|Add0~12                                                              ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~0                     ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~0                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~1                     ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~1                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~2                     ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~2                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~3                     ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~3                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~4                     ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~4                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n4_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n4_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~5                     ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~5                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n5_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n5_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~6                     ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~6                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n6_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n6_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~7                     ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~7                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n7_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n7_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~8                     ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~8                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~9                     ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~9                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~10                    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~10                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n2_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n2_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~11                    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~11                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n3_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n3_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~12                    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~12                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~13                    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~13                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n1_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n1_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l4_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l4_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~0                     ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~0                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~1                     ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~1                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~2                     ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~2                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~3                     ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~3                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~4                     ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~4                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~5                     ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~5                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n5_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n5_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~6                     ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~6                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~7                     ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~7                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n7_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n7_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~8                     ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~8                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~9                     ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~9                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~10                    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~10                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n2_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n2_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~11                    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~11                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~12                    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~12                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~13                    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~13                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n1_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n1_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l4_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l4_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~0                     ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~0                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~1                     ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~1                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~2                     ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~2                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~3                     ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~3                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~4                     ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~4                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~5                     ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~5                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~6                     ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~6                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~7                     ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~7                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n7_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n7_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~8                     ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~8                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~9                     ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~9                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~10                    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~10                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n2_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n2_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~11                    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~11                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n3_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n3_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~12                    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~12                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~13                    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~13                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n1_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n1_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l4_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l4_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~0                     ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~0                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~1                     ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~1                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~2                     ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~2                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~3                     ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~3                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~4                     ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~4                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n4_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n4_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~5                     ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~5                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n5_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n5_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~6                     ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~6                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~7                     ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~7                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n7_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n7_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~8                     ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~8                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~9                     ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~9                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~10                    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~10                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n2_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n2_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~11                    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~11                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n3_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n3_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~12                    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~12                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~13                    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~13                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n1_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n1_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l4_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l4_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~0                     ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~0                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~1                     ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~1                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~2                     ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~2                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~3                     ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~3                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~4                     ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~4                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~5                     ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~5                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n5_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n5_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~6                     ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~6                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n6_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n6_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~7                     ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~7                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n7_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n7_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~8                     ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~8                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~9                     ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~9                     ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~10                    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~10                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n2_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n2_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~11                    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~11                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n3_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n3_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~12                    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~12                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~13                    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~13                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n1_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n1_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l4_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l4_w0_n0_mux_dataout    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~0                    ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~0                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~1                    ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~1                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~2                    ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~2                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~3                    ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~3                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~4                    ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~4                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~5                    ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~5                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~6                    ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~6                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n6_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n6_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~7                    ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~7                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n7_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n7_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~8                    ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~8                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~9                    ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~9                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~10                   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~10                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~11                   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~11                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n3_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n3_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n1_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n1_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l4_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l4_w0_n0_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~0                    ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~0                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~1                    ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~1                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~2                    ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~2                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~3                    ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~3                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~4                    ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~4                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~5                    ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~5                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~6                    ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~6                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~7                    ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~7                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n7_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n7_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~8                    ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~8                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~9                    ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~9                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~10                   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~10                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~11                   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~11                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n3_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n3_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n1_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n1_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l4_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l4_w0_n0_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~0                    ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~0                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~1                    ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~1                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~2                    ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~2                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~3                    ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~3                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~4                    ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~4                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~5                    ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~5                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~6                    ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~6                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n6_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n6_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~7                    ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~7                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n7_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n7_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~8                    ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~8                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~9                    ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~9                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~10                   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~10                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~11                   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~11                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n3_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n3_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n1_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n1_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l4_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l4_w0_n0_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~0                    ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~0                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~1                    ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~1                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~2                    ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~2                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~3                    ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~3                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~4                    ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~4                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~5                    ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~5                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~6                    ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~6                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n6_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n6_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~7                    ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~7                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~8                    ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~8                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~9                    ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~9                    ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~10                   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~10                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~11                   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~11                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n3_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n3_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n1_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n1_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l4_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l4_w0_n0_mux_dataout   ; out0             ;
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                 ;
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
+; Node Name                                                                         ; Output Port Name                                                                  ; Output Port Type ;
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
+; |CPU|tx[1]                                                                        ; |CPU|tx[1]                                                                        ; pin_out          ;
+; |CPU|tx[2]                                                                        ; |CPU|tx[2]                                                                        ; pin_out          ;
+; |CPU|tx[3]                                                                        ; |CPU|tx[3]                                                                        ; pin_out          ;
+; |CPU|ty[2]                                                                        ; |CPU|ty[2]                                                                        ; pin_out          ;
+; |CPU|ty[3]                                                                        ; |CPU|ty[3]                                                                        ; pin_out          ;
+; |CPU|tz[1]                                                                        ; |CPU|tz[1]                                                                        ; pin_out          ;
+; |CPU|tz[2]                                                                        ; |CPU|tz[2]                                                                        ; pin_out          ;
+; |CPU|tz[3]                                                                        ; |CPU|tz[3]                                                                        ; pin_out          ;
+; |CPU|tula[0]                                                                      ; |CPU|tula[0]                                                                      ; pin_out          ;
+; |CPU|tula[1]                                                                      ; |CPU|tula[1]                                                                      ; pin_out          ;
+; |CPU|tula[2]                                                                      ; |CPU|tula[2]                                                                      ; pin_out          ;
+; |CPU|tula[3]                                                                      ; |CPU|tula[3]                                                                      ; pin_out          ;
+; |CPU|out[3]                                                                       ; |CPU|out[3]                                                                       ; pin_out          ;
+; |CPU|current_state[3]                                                             ; |CPU|current_state[3]                                                             ; pin_out          ;
+; |CPU|RegZ:registradorZ|out[3]                                                     ; |CPU|RegZ:registradorZ|out[3]                                                     ; regout           ;
+; |CPU|Control:controle|WideOr2                                                     ; |CPU|Control:controle|WideOr2                                                     ; out0             ;
+; |CPU|RegZ:registradorZ|Selector0~0                                                ; |CPU|RegZ:registradorZ|Selector0~0                                                ; out0             ;
+; |CPU|Control:controle|Selector0~1                                                 ; |CPU|Control:controle|Selector0~1                                                 ; out0             ;
+; |CPU|Control:controle|Selector1~1                                                 ; |CPU|Control:controle|Selector1~1                                                 ; out0             ;
+; |CPU|Control:controle|Decoder1~4                                                  ; |CPU|Control:controle|Decoder1~4                                                  ; out0             ;
+; |CPU|Control:controle|Decoder1~5                                                  ; |CPU|Control:controle|Decoder1~5                                                  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n1_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n1_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n2_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n2_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n3_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n3_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n1_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n1_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~14                    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~14                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n6_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n6_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n3_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n3_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~14                    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~14                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~14                    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~14                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n6_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n6_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~14                    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~14                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~14                    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~14                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n5_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n5_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n2_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n2_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~12                   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~12                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~13                   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~13                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~14                   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~14                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n2_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n2_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~12                   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~12                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~13                   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~13                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~14                   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~14                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n4_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n4_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n5_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n5_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n2_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n2_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~12                   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~12                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~13                   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~13                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~14                   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~14                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n5_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n5_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n7_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n7_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n2_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n2_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~12                   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~12                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~13                   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~13                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~14                   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~14                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1 ; out0             ;
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                 ;
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
+; Node Name                                                                         ; Output Port Name                                                                  ; Output Port Type ;
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
+; |CPU|tx[1]                                                                        ; |CPU|tx[1]                                                                        ; pin_out          ;
+; |CPU|tx[2]                                                                        ; |CPU|tx[2]                                                                        ; pin_out          ;
+; |CPU|tx[3]                                                                        ; |CPU|tx[3]                                                                        ; pin_out          ;
+; |CPU|ty[2]                                                                        ; |CPU|ty[2]                                                                        ; pin_out          ;
+; |CPU|ty[3]                                                                        ; |CPU|ty[3]                                                                        ; pin_out          ;
+; |CPU|tz[1]                                                                        ; |CPU|tz[1]                                                                        ; pin_out          ;
+; |CPU|tz[2]                                                                        ; |CPU|tz[2]                                                                        ; pin_out          ;
+; |CPU|tz[3]                                                                        ; |CPU|tz[3]                                                                        ; pin_out          ;
+; |CPU|tula[0]                                                                      ; |CPU|tula[0]                                                                      ; pin_out          ;
+; |CPU|tula[1]                                                                      ; |CPU|tula[1]                                                                      ; pin_out          ;
+; |CPU|tula[2]                                                                      ; |CPU|tula[2]                                                                      ; pin_out          ;
+; |CPU|tula[3]                                                                      ; |CPU|tula[3]                                                                      ; pin_out          ;
+; |CPU|out[3]                                                                       ; |CPU|out[3]                                                                       ; pin_out          ;
+; |CPU|current_state[3]                                                             ; |CPU|current_state[3]                                                             ; pin_out          ;
+; |CPU|RegZ:registradorZ|out[3]                                                     ; |CPU|RegZ:registradorZ|out[3]                                                     ; regout           ;
+; |CPU|Control:controle|WideOr2                                                     ; |CPU|Control:controle|WideOr2                                                     ; out0             ;
+; |CPU|RegZ:registradorZ|Selector0~0                                                ; |CPU|RegZ:registradorZ|Selector0~0                                                ; out0             ;
+; |CPU|Control:controle|Selector0~1                                                 ; |CPU|Control:controle|Selector0~1                                                 ; out0             ;
+; |CPU|Control:controle|Selector1~1                                                 ; |CPU|Control:controle|Selector1~1                                                 ; out0             ;
+; |CPU|Control:controle|Decoder1~4                                                  ; |CPU|Control:controle|Decoder1~4                                                  ; out0             ;
+; |CPU|Control:controle|Decoder1~5                                                  ; |CPU|Control:controle|Decoder1~5                                                  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n1_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n1_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n2_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n2_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n3_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n3_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n1_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n1_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~14                    ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|_~14                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux4|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n6_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n6_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n3_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n3_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~14                    ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|_~14                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux3|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~14                    ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|_~14                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux2|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n6_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n6_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~14                    ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|_~14                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux1|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~14                    ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|_~14                    ; out0             ;
+; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1  ; |CPU|Control:controle|lpm_mux:Mux0|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1  ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n5_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n5_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n2_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n2_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~12                   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~12                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~13                   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~13                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~14                   ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|_~14                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux3|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n2_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n2_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~12                   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~12                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~13                   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~13                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~14                   ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|_~14                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux2|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n4_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n4_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n5_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n5_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n2_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n2_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~12                   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~12                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~13                   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~13                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~14                   ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|_~14                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux1|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n5_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n5_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n7_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n7_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n2_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n2_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~12                   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~12                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~13                   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~13                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1 ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~14                   ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|_~14                   ; out0             ;
+; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1 ; |CPU|RegY:registradorY|lpm_mux:Mux0|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1 ; out0             ;
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Mon Dec 09 17:59:03 2019
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off CPU-sd2 -c CPU-sd2
+Info: Using vector source file "C:/Users/Artur/Desktop/Proj2SD/ProjetoSD2/CPU-sd2/CPU.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of CPU.vwf called CPU-sd2.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found clock-sensitive change during active clock edge at time 110.0 ns on register "|CPU|MEM:memoria|entrada[0]"
+Warning: Found clock-sensitive change during active clock edge at time 410.0 ns on register "|CPU|MEM:memoria|entrada[1]"
+Warning: Found clock-sensitive change during active clock edge at time 410.0 ns on register "|CPU|MEM:memoria|entrada[2]"
+Warning: Found clock-sensitive change during active clock edge at time 810.0 ns on register "|CPU|MEM:memoria|entrada[3]"
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      51.31 %
+Info: Number of transitions in simulation is 292594
+Info: Vector file CPU.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 149 megabytes
+    Info: Processing ended: Mon Dec 09 17:59:03 2019
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+

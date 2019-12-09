@@ -1,4 +1,4 @@
-module RegX (entrada, barramentodados, tx, clock);
+module RegX (entrada, barramento, tx, clock);
 	input wire clock;
 	input wire [3:0] entrada, tx;
 	output reg [3:0] barramento;
@@ -13,6 +13,7 @@ module RegX (entrada, barramentodados, tx, clock);
 				CLEAR: barramento <= 4'd0;
 				LOAD: barramento <= entrada;
 				//HOLD faz nada
+				default;
 			endcase
 		end
 
