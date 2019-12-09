@@ -10,7 +10,7 @@ module Control(current_state, tx, ty, tz, tula, clock);
 	
 	initial
 	begin
-		current_state <= 2'd0;
+		current_state <= 4'd0;
 	end
 	
 	always@(posedge clock)
@@ -19,34 +19,34 @@ module Control(current_state, tx, ty, tz, tula, clock);
 		case(current_state)
 			4'd0: begin //estado 0, inicializador
 				current_state <= 4'd1;
-				tx <= LOAD;
+				tx <= LOAD; //carrega a primeira entrada no barramento de dados
 				ty <= CLEAR;
 				tz <= CLEAR;
 			end
 			
 			4'd1: begin //estado 1
 				current_state <= 4'd2;
-				tx <= LOAD;
-				ty <= LOAD;
+				tx <= LOAD; //carrega a segunda entrada no barramento de dados
+				ty <= LOAD; //carrega a primeira entrada no acumulador
 				tz <= CLEAR;
 			end
 			4'd2: begin //estado 2
 				current_state <= 4'd3;
-				tx <= CLEAR;
-				ty <= LOAD;
+				tx <= CLEAR; //limpa o barramento
+				ty <= LOAD; //carrega barramento + acumulador
 				tz <= CLEAR;
 			end
 			4'd3: begin //estado 3
 				current_state <= 4'd4;
 				tx <= CLEAR;
-				ty <= SHIFTR;
+				ty <= SHIFTR; //divide o acumulador por 2 usando shift-right
 				tz <= CLEAR;
 			end
 			4'd4: begin //estado 4
 				current_state <= 4'd5;
 				tx <= CLEAR;
 				ty <= CLEAR;
-				tz <= LOAD;
+				tz <= LOAD; //carrega o acumulador no output
 			end
 			4'd5: begin //estado 5, final
 				current_state <= 4'd0; //reinicia o ciclo
