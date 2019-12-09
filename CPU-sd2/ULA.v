@@ -6,7 +6,7 @@ module ULA(ulaout, tula, barramento, acumulador);
 	
 	parameter ADD = 4'd0;
 	
-	always @(tula or barramento or acumulador)
+	always@(tula or barramento or acumulador)
 	begin
 		case(tula)
 			ADD: ulaout <= barramento + acumulador;

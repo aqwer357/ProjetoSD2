@@ -10,7 +10,7 @@ module ULA(ulaout, tula, barramento, acumulador);
 	begin
 		case(tula)
 			ADD: ulaout <= barramento + acumulador;
-			default:
+			default;
 		endcase
 	end
 	

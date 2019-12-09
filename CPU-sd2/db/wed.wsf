@@ -23,8 +23,8 @@ applicable agreement for further details.
 VECTOR("C:/Users/Artur/Desktop/Proj2SD/ProjetoSD2/CPU-sd2/CPU.vwf")
 {
 	ZOOM{
-		ZBEGIN = 0;
-		ZEND = 42400;
+		ZBEGIN = 9815570;
+		ZEND = 9857970;
 		NUMERATOR = 20;
 		DENOMINATOR = 1000;
 		TOP_INDEX = 0;

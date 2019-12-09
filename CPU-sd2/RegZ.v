@@ -1,4 +1,4 @@
-module RegZ(clock, tz, acumulador, out);
+module RegZ(tz, acumulador, out, clock);
 	input wire clock;
 	input wire [3:0] acumulador, tz;
 	output reg [3:0] out;

@@ -20,152 +20,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-MEM
-# storage
-db|CPU-sd2.(1).cnf
-db|CPU-sd2.(1).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-mem.v
-9671e754cc8ae5b7f22efaf97939d273
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-CLEAR
-0000
-PARAMETER_UNSIGNED_BIN
-DEF
-LOAD
-0001
-PARAMETER_UNSIGNED_BIN
-DEF
-HOLD
-0010
-PARAMETER_UNSIGNED_BIN
-DEF
-}
-# hierarchies {
-MEM:memoria
-}
-# macro_sequence
-
-# end
-# entity
-Control
-# storage
-db|CPU-sd2.(2).cnf
-db|CPU-sd2.(2).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-control.v
-eaca955bbe59424e4be7f3c762ed2cea
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-CLEAR
-0000
-PARAMETER_UNSIGNED_BIN
-DEF
-LOAD
-0001
-PARAMETER_UNSIGNED_BIN
-DEF
-HOLD
-0010
-PARAMETER_UNSIGNED_BIN
-DEF
-SHIFTR
-0011
-PARAMETER_UNSIGNED_BIN
-DEF
-}
-# hierarchies {
-Control:controle
-}
-# macro_sequence
-
-# end
-# entity
-ULA
-# storage
-db|CPU-sd2.(3).cnf
-db|CPU-sd2.(3).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-ula.v
-322373772d173d5868a6289fe7f2fb
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-ADD
-0000
-PARAMETER_UNSIGNED_BIN
-DEF
-}
-# hierarchies {
-ULA:ula
-}
-# macro_sequence
-
-# end
-# entity
 RegX
 # storage
 db|CPU-sd2.(4).cnf
@@ -281,7 +135,7 @@ ON
 # case_sensitive
 # source_file
 regz.v
-a151ef108e8e9421d7a23fc796d1c5f
+bd124d81f7f271c3a171abdeab234e7b
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -320,6 +174,152 @@ RegZ:registradorZ
 
 # end
 # entity
+ULA
+# storage
+db|CPU-sd2.(3).cnf
+db|CPU-sd2.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+ula.v
+c044e611bfa017eb9dd5f685f56bf
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+ADD
+0000
+PARAMETER_UNSIGNED_BIN
+DEF
+}
+# hierarchies {
+ULA:ula
+}
+# macro_sequence
+
+# end
+# entity
+Control
+# storage
+db|CPU-sd2.(2).cnf
+db|CPU-sd2.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+control.v
+6bde9057fd270c04da9ef2618ff48
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+CLEAR
+0000
+PARAMETER_UNSIGNED_BIN
+DEF
+LOAD
+0001
+PARAMETER_UNSIGNED_BIN
+DEF
+HOLD
+0010
+PARAMETER_UNSIGNED_BIN
+DEF
+SHIFTR
+0011
+PARAMETER_UNSIGNED_BIN
+DEF
+}
+# hierarchies {
+Control:controle
+}
+# macro_sequence
+
+# end
+# entity
+MEM
+# storage
+db|CPU-sd2.(1).cnf
+db|CPU-sd2.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+mem.v
+3dba119673d39fb5f766b48f62185c8
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+CLEAR
+0000
+PARAMETER_UNSIGNED_BIN
+DEF
+LOAD
+0001
+PARAMETER_UNSIGNED_BIN
+DEF
+HOLD
+0010
+PARAMETER_UNSIGNED_BIN
+DEF
+}
+# hierarchies {
+MEM:memoria
+}
+# macro_sequence
+
+# end
+# entity
 CPU
 # storage
 db|CPU-sd2.(0).cnf
@@ -331,7 +331,7 @@ ON
 # case_sensitive
 # source_file
 cpu.v
-72796dc7e2b3f09215eeea9f47dcd
+7bf32cc3ceed441ad999c87a6666f22
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT

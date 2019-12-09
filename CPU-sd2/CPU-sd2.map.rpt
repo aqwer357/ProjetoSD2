@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CPU-sd2
-Mon Dec 09 17:58:46 2019
+Mon Dec 09 19:28:12 2019
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -49,7 +49,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Mon Dec 09 17:58:46 2019        ;
+; Analysis & Synthesis Status   ; Successful - Mon Dec 09 19:28:12 2019        ;
 ; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                 ; CPU-sd2                                      ;
 ; Top-level Entity Name         ; CPU                                          ;
@@ -219,8 +219,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name    ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+------------------------+--------------+
 ; |CPU                       ; 30 (0)            ; 24 (0)       ; 0                 ; 0            ; 0       ; 0         ; 0         ; 49   ; 0            ; |CPU                   ; work         ;
-;    |Control:controle|      ; 8 (8)             ; 7 (7)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|Control:controle  ; work         ;
-;    |MEM:memoria|           ; 5 (5)             ; 5 (5)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|MEM:memoria       ;              ;
+;    |Control:controle|      ; 5 (5)             ; 4 (4)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|Control:controle  ;              ;
+;    |MEM:memoria|           ; 8 (8)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|MEM:memoria       ;              ;
 ;    |RegX:registradorX|     ; 4 (4)             ; 4 (4)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|RegX:registradorX ; work         ;
 ;    |RegY:registradorY|     ; 5 (5)             ; 4 (4)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|RegY:registradorY ; work         ;
 ;    |RegZ:registradorZ|     ; 4 (4)             ; 4 (4)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CPU|RegZ:registradorZ ; work         ;
@@ -237,8 +237,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Control:controle|tz[1..3]              ; Stuck at GND due to stuck port data_in ;
 ; Control:controle|ty[2..3]              ; Stuck at GND due to stuck port data_in ;
 ; Control:controle|tx[1..3]              ; Stuck at GND due to stuck port data_in ;
-; Control:controle|current_state[3]      ; Stuck at GND due to stuck port data_in ;
 ; Control:controle|tula[0..3]            ; Stuck at GND due to stuck port data_in ;
+; MEM:memoria|current_state[3]           ; Stuck at GND due to stuck port data_in ;
 ; Total Number of Removed Registers = 13 ;                                        ;
 +----------------------------------------+----------------------------------------+
 
@@ -355,7 +355,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Mon Dec 09 17:58:45 2019
+    Info: Processing started: Mon Dec 09 19:28:11 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU-sd2 -c CPU-sd2
 Info: Found 1 design units, including 1 entities, in source file regx.v
     Info: Found entity 1: RegX
@@ -412,8 +412,8 @@ Info: Implemented 79 device resources after synthesis - the final resource count
     Info: Implemented 30 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 24 warnings
     Info: Peak virtual memory: 225 megabytes
-    Info: Processing ended: Mon Dec 09 17:58:46 2019
+    Info: Processing ended: Mon Dec 09 19:28:12 2019
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 

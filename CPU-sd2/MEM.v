@@ -1,8 +1,7 @@
-module MEM(tx, in1, in2, entrada, contador, clock);
-	
-	input wire [3:0] in1, in2, tx;
+module MEM(tx, in1, in2, entrada, contador, current_state, clock);
 	input wire clock;
-	output reg [3:0] entrada;
+	input wire [3:0] in1, in2, tx;
+	output reg [3:0] entrada, current_state;
 	output reg contador;
 	
 	parameter CLEAR = 4'd0;
@@ -13,6 +12,7 @@ module MEM(tx, in1, in2, entrada, contador, clock);
 	begin
 		entrada <= 4'd0;
 		contador <= 1'b0;
+		current_state <= 4'd0;
 	end
 	
 	always@(posedge clock)
@@ -31,6 +31,16 @@ module MEM(tx, in1, in2, entrada, contador, clock);
 				default;
 			endcase
 		end
+		
+		case(current_state)
+			4'd0: current_state <= 4'd1;
+			4'd1: current_state <= 4'd2;
+			4'd2: current_state <= 4'd3;
+			4'd3: current_state <= 4'd4;
+			4'd4: current_state <= 4'd5;
+			4'd5: current_state <= 4'd0;
+			default;
+		endcase;
 	end
 
 endmodule
